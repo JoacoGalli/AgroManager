@@ -7,6 +7,7 @@ from kivymd.uix.screen import MDScreen
 from kivymd.uix.toolbar import MDTopAppBar
 from kivymd.uix.button import MDRaisedButton, MDFlatButton
 from kivymd.uix.dialog import MDDialog
+from kivy.uix.widget import Widget
 from kivymd.uix.textfield import MDTextField
 from kivymd.uix.list import ThreeLineListItem, MDList
 from kivymd.uix.card import MDCard
@@ -234,6 +235,7 @@ class TamboScreen(MDScreen):
         """Mostrar diálogo para registrar día"""
         content = BoxLayout(orientation='vertical', spacing=dp(10), size_hint_y=None)
         content.bind(minimum_height=content.setter('height'))
+        content.add_widget(Widget(size_hint_y=None, height=dp(70)))
         
         self.litros_field = MDTextField(
             hint_text="Litros producidos",
