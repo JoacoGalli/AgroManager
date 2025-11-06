@@ -3,17 +3,17 @@ Módulo de consulta de precios de mercado
 Obtiene valores actualizados de dólar, soja, carne, etc.
 """
 
+
+import requests
+from kivy.clock import Clock
+from kivy.metrics import dp
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.scrollview import ScrollView
+from kivymd.uix.button import MDRaisedButton
+from kivymd.uix.card import MDCard
+from kivymd.uix.label import MDLabel
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.toolbar import MDTopAppBar
-from kivymd.uix.button import MDRaisedButton
-from kivymd.uix.label import MDLabel
-from kivymd.uix.card import MDCard
-from kivy.uix.scrollview import ScrollView
-from kivy.uix.boxlayout import BoxLayout
-from kivy.metrics import dp
-from kivy.clock import Clock
-import requests
-import json
 
 
 class PriceCard(MDCard):

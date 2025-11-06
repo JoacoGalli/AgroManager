@@ -4,9 +4,9 @@ Funciones de exportación, backup, etc.
 """
 
 import csv
+import os
 import sqlite3
 from datetime import datetime
-import os
 
 
 class ExportUtils:
@@ -193,7 +193,7 @@ class DataCleaner:
         conn.commit()
         conn.close()
         
-        print(f"✅ Eliminados:")
+        print("✅ Eliminados:")
         print(f"   - Gastos: {gastos_deleted}")
         print(f"   - Ingresos: {ingresos_deleted}")
         print(f"   - Registros tambo: {tambo_deleted}")
@@ -220,7 +220,7 @@ if __name__ == '__main__':
     elif opcion == '2':
         backup = ExportUtils.backup_database()
         if backup:
-            print(f"\n✅ Backup creado exitosamente")
+            print("\n✅ Backup creado exitosamente")
     
     elif opcion == '3':
         ExportUtils.generate_financial_report()

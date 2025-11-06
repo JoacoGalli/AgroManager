@@ -5,7 +5,6 @@ Maneja todas las operaciones CRUD de la aplicación
 
 import sqlite3
 from datetime import datetime, timedelta
-import os
 
 
 class DatabaseManager:

@@ -2,19 +2,21 @@
 Módulo de cálculo de márgenes de producción
 """
 
-from kivymd.uix.screen import MDScreen
-from kivymd.uix.toolbar import MDTopAppBar
-from kivymd.uix.button import MDRaisedButton, MDFlatButton
-from kivymd.uix.dialog import MDDialog
-from kivymd.uix.textfield import MDTextField
-from kivy.uix.widget import Widget
-from kivymd.uix.list import ThreeLineListItem, MDList
-from kivymd.uix.label import MDLabel
-from kivymd.uix.card import MDCard
-from kivy.uix.scrollview import ScrollView
-from kivy.uix.boxlayout import BoxLayout
-from kivy.metrics import dp
 from datetime import datetime
+
+from kivy.metrics import dp
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.scrollview import ScrollView
+from kivy.uix.widget import Widget
+from kivymd.uix.button import MDFlatButton, MDRaisedButton
+from kivymd.uix.card import MDCard
+from kivymd.uix.dialog import MDDialog
+from kivymd.uix.label import MDLabel
+from kivymd.uix.list import MDList, ThreeLineListItem
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.textfield import MDTextField
+from kivymd.uix.toolbar import MDTopAppBar
+
 import database
 
 

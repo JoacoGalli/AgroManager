@@ -14,6 +14,7 @@ dependencies = [
     "matplotlib>=3.7.0",
     "requests==2.31.0",
     "kivy-garden==0.1.5",
+    "ruff>=0.14.3",
 ]
 
 [project.optional-dependencies]
@@ -30,3 +31,39 @@ build = [
 [tool.black]
 line-length = 120
 target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+[tool.ruff]
+# Directorios donde Ruff debe buscar código
+src = ["."]
+target-version = "py312"
+
+# Ignorá carpetas innecesarias
+exclude = [
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+    ".vscode",
+]
+
+# Seleccioná reglas (puede reemplazar flake8, isort y black)
+lint.select = [
+    "E",  # pycodestyle errors
+    "F",  # pyflakes
+    "I",  # isort (ordenar imports)
+    "B",  # flake8-bugbear
+    "UP", # pyupgrade
+]
+lint.ignore = [
+    "E501",  # Ignorar longitud de línea
+]
+
+# Estilo de formato (reemplaza Black)
+line-length = 100
+indent-width = 4
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+

@@ -3,11 +3,11 @@ Wrapper simple para matplotlib que funciona con Kivy
 Alternativa a kivy-garden.matplotlib
 """
 
-from kivy.uix.image import Image
-from kivy.core.image import Image as CoreImage
 import matplotlib
+from kivy.core.image import Image as CoreImage
+from kivy.uix.image import Image
+
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 from io import BytesIO
 
 

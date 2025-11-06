@@ -3,8 +3,9 @@ Script de ejecución y verificación de AgroManager
 Verifica dependencias antes de ejecutar la aplicación
 """
 
-import sys
 import os
+import sys
+
 
 def check_dependencies():
     """Verificar que todas las dependencias estén instaladas"""

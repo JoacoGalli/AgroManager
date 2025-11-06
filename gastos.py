@@ -2,24 +2,27 @@
 Módulo de gestión de gastos con gráficos
 """
 
-from kivymd.uix.screen import MDScreen
-from kivymd.uix.toolbar import MDTopAppBar
-from kivymd.uix.button import MDRaisedButton, MDFlatButton
-from kivymd.uix.dialog import MDDialog
-from kivymd.uix.textfield import MDTextField
-from kivymd.uix.list import TwoLineListItem, MDList
-from kivymd.uix.menu import MDDropdownMenu
-from kivymd.uix.card import MDCard
-from kivymd.uix.label import MDLabel
-from kivy.uix.scrollview import ScrollView
-from kivy.uix.boxlayout import BoxLayout
-from kivy.metrics import dp
-from kivy.uix.widget import Widget
 import matplotlib
+from kivy.metrics import dp
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.scrollview import ScrollView
+from kivy.uix.widget import Widget
+from kivymd.uix.button import MDFlatButton, MDRaisedButton
+from kivymd.uix.card import MDCard
+from kivymd.uix.dialog import MDDialog
+from kivymd.uix.label import MDLabel
+from kivymd.uix.list import MDList, TwoLineListItem
+from kivymd.uix.menu import MDDropdownMenu
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.textfield import MDTextField
+from kivymd.uix.toolbar import MDTopAppBar
+
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 from datetime import datetime
+
+import matplotlib.pyplot as plt
 from kivy.clock import Clock
+
 import database
 from matplotlib_wrapper import MatplotlibWidget
 

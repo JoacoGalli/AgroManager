@@ -5,27 +5,28 @@ Autor: Sistema AgroManager
 Versión: 1.0
 """
 
-from kivymd.app import MDApp
-from kivymd.uix.screen import MDScreen
-from kivymd.uix.screenmanager import MDScreenManager
-from kivymd.uix.button import MDRaisedButton, MDIconButton
-from kivymd.uix.card import MDCard
-from kivymd.uix.label import MDLabel
-from kivymd.uix.toolbar import MDTopAppBar
-from kivy.uix.scrollview import ScrollView
+from kivy.metrics import dp
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
-from kivy.metrics import dp
-from kivy.clock import Clock
-import database
+from kivy.uix.scrollview import ScrollView
+from kivymd.app import MDApp
+from kivymd.uix.button import MDIconButton
+from kivymd.uix.card import MDCard
+from kivymd.uix.label import MDLabel
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.screenmanager import MDScreenManager
+from kivymd.uix.toolbar import MDTopAppBar
+
 import cheques
-import proveedores
+import database
 import gastos
 import ingresos
 import margenes
-import superficie
 import mercado
+import proveedores
+import superficie
 import tambo
+
 
 class DashboardCard(MDCard):
     """Tarjeta personalizada para el dashboard"""
