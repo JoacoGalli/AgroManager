@@ -1,0 +1,5 @@
+kivy==2.3.0
+kivymd==1.1.1
+matplotlib==3.7.1
+requests==2.31.0
+kivy-garden==0.1.5

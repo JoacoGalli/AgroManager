@@ -1,0 +1,53 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyw
+*.egg-info/
+*.egg
+*.log
+
+# ---- Entornos virtuales ----
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# ---- Archivos temporales ----
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ---- Configuración del sistema / IDE ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- Archivos de base de datos locales ----
+*.db
+*.sqlite3
+
+# ---- Archivos de usuario o experimentales ----
+README_UV.md
+TROUBLESHOOTING.md
+
+# ---- Archivos de dependencias bloqueadas (si no los usás en producción) ----
+uv.lock
+
+# ---- Archivos de ejecución o build ----
+*.spec
+dist/
+build/
+
+# ---- Archivos generados por Kivy ----
+*.kv~  # backups temporales de kv
+.kivy/
+.kivymd/
+
+# ---- Archivos del sistema ----
+.DS_Store
+Thumbs.db
+
